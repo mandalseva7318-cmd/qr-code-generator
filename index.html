@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProQR – Dynamic QR Code Platform | Create & Track QR Codes</title>
+    <meta name="description" content="Create dynamic QR codes for links, payments, social media. Track scans, customize designs, manage from dashboard. Free & Pro plans.">
+    <meta name="keywords" content="dynamic QR code, QR code generator, track QR scans, custom QR, UPI QR, WhatsApp QR">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">ProQR</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition">Features</a>
+                <a href="#types" class="text-gray-700 hover:text-blue-600 font-medium transition">QR Types</a>
+            </nav>
+            <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4 space-y-2">
+                <a href="#home" class="block text-gray-700 hover:text-blue-600 py-2">Home</a>
+                <a href="#features" class="block text-gray-700 hover:text-blue-600 py-2">Features</a>
+                <a href="#types" class="block text-gray-700 hover:text-blue-600 py-2">QR Types</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-16 sm:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Create Dynamic QR Codes That Work</h2>
+            <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">Generate, customize, and track QR codes for 40+ types. Perfect for business, payments, and marketing.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="create.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg transform hover:scale-105">
+                    Create QR Code
+                </a>
+                <a href="#types" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    Explore Types
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Powerful Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="zap" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Dynamic QR Codes</h3>
+                <p class="text-gray-600">Change QR destination anytime without reprinting. Perfect for menus, promotions, and events.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="bar-chart" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Track Scans</h3>
+                <p class="text-gray-600">Real-time analytics showing when, where, and how often your QR codes are scanned.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="palette" class="w-6 h-6 text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Custom Designs</h3>
+                <p class="text-gray-600">Beautiful templates, gradients, logos, and frames to match your brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Types Section -->
+    <section id="types" class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">40+ QR Code Types</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">From simple links to complex business solutions, we support every QR code type you need.</p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 max-w-6xl mx-auto">
+                <a href="create.html?type=url" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="link" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">URL</span>
+                </a>
+                <a href="create.html?type=text" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="type" class="w-8 h-8 text-gray-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Text</span>
+                </a>
+                <a href="create.html?type=wifi" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="wifi" class="w-8 h-8 text-orange-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Wi-Fi</span>
+                </a>
+                <a href="create.html?type=upi" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="credit-card" class="w-8 h-8 text-red-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">UPI</span>
+                </a>
+                <a href="create.html?type=whatsapp" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">WhatsApp</span>
+                </a>
+                <a href="create.html?type=email" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="mail" class="w-8 h-8 text-indigo-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Email</span>
+                </a>
+                <a href="create.html?type=phone" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="phone" class="w-8 h-8 text-pink-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Phone</span>
+                </a>
+                <a href="create.html?type=vcard" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="user" class="w-8 h-8 text-teal-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">vCard</span>
+                </a>
+                <a href="create.html?type=menu" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="utensils" class="w-8 h-8 text-yellow-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Menu</span>
+                </a>
+                <a href="create.html?type=instagram" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="instagram" class="w-8 h-8 text-pink-500 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Instagram</span>
+                </a>
+                <a href="create.html?type=facebook" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="facebook" class="w-8 h-8 text-blue-700 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Facebook</span>
+                </a>
+                <a href="create.html?type=youtube" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="youtube" class="w-8 h-8 text-red-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">YouTube</span>
+                </a>
+                <a href="create.html?type=twitter" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="twitter" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Twitter</span>
+                </a>
+                <a href="create.html?type=linkedin" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="linkedin" class="w-8 h-8 text-blue-800 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">LinkedIn</span>
+                </a>
+                <a href="create.html?type=paypal" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="dollar-sign" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">PayPal</span>
+                </a>
+                <a href="create.html?type=crypto" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="bitcoin" class="w-8 h-8 text-orange-500 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Crypto</span>
+                </a>
+                <a href="create.html?type=calendar" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="calendar" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Calendar</span>
+                </a>
+                <a href="create.html?type=location" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="map-pin" class="w-8 h-8 text-red-500 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Location</span>
+                </a>
+                <a href="create.html?type=sms" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="message-square" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">SMS</span>
+                </a>
+                <a href="create.html?type=telegram" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="send" class="w-8 h-8 text-blue-500 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Telegram</span>
+                </a>
+                <a href="create.html?type=discord" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="hash" class="w-8 h-8 text-indigo-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Discord</span>
+                </a>
+                <a href="create.html?type=zoom" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="video" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Zoom</span>
+                </a>
+                <a href="create.html?type=skype" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="phone-call" class="w-8 h-8 text-blue-700 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Skype</span>
+                </a>
+                <a href="create.html?type=github" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="github" class="w-8 h-8 text-gray-800 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">GitHub</span>
+                </a>
+                <a href="create.html?type=pinterest" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="image" class="w-8 h-8 text-red-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Pinterest</span>
+                </a>
+                <a href="create.html?type=reddit" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-orange-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Reddit</span>
+                </a>
+                <a href="create.html?type=medium" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="book-open" class="w-8 h-8 text-black mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Medium</span>
+                </a>
+                <a href="create.html?type=etsy" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 text-pink-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Etsy</span>
+                </a>
+                <a href="create.html?type=venmo" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="dollar-sign" class="w-8 h-8 text-blue-500 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Venmo</span>
+                </a>
+                <a href="create.html?type=amazon" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="package" class="w-8 h-8 text-orange-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Amazon</span>
+                </a>
+                <a href="create.html?type=uber" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="car" class="w-8 h-8 text-black mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Uber</span>
+                </a>
+                <a href="create.html?type=netflix" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="play-circle" class="w-8 h-8 text-red-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Netflix</span>
+                </a>
+                <a href="create.html?type=slack" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Slack</span>
+                </a>
+                <a href="create.html?type=notion" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="file-text" class="w-8 h-8 text-gray-800 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Notion</span>
+                </a>
+                <a href="create.html?type=figma" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="figma" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Figma</span>
+                </a>
+                <a href="create.html?type=canva" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="palette" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Canva</span>
+                </a>
+                <a href="create.html?type=drive" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="hard-drive" class="w-8 h-8 text-blue-700 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Drive</span>
+                </a>
+                <a href="create.html?type=docs" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="file-text" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Docs</span>
+                </a>
+                <a href="create.html?type=sheets" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="table" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Sheets</span>
+                </a>
+                <a href="create.html?type=slides" class="text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border border-gray-100">
+                    <i data-lucide="presentation" class="w-8 h-8 text-orange-600 mx-auto mb-2"></i>
+                    <span class="text-sm font-medium text-gray-800">Slides</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ProQR</h3>
+                    <p class="text-gray-400">Professional QR code solutions for modern businesses.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Features</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Dynamic QR</a></li>
+                        <li><a href="#" class="hover:text-white">Analytics</a></li>
+                        <li><a href="#" class="hover:text-white">Custom Designs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">API Docs</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms</a></li>
+                        <li><a href="#" class="hover:text-white">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ProQR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        lucide.createIcons();
+    </script>
+</body>
+</html>

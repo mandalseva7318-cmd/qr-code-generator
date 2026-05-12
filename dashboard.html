@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – ProQR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">ProQR</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-600">Dashboard</a>
+                <a href="create.html" class="text-gray-700 hover:text-blue-600">Create QR</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6">My Dashboard</h1>
+
+        <!-- Stats -->
+        <div class="grid md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold mb-2">Total QR Codes</h3>
+                <p class="text-3xl font-bold text-blue-600">12</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold mb-2">Total Scans</h3>
+                <p class="text-3xl font-bold text-green-600">1,245</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold mb-2">This Month</h3>
+                <p class="text-3xl font-bold text-purple-600">387</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold mb-2">Active QR</h3>
+                <p class="text-3xl font-bold text-orange-600">8</p>
+            </div>
+        </div>
+
+        <!-- My QR Codes -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">My QR Codes</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border rounded p-4">
+                    <img src="https://via.placeholder.com/150" alt="QR Code" class="w-full mb-4">
+                    <h3 class="font-semibold">WhatsApp QR</h3>
+                    <p class="text-sm text-gray-600">Scans: 234</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Edit</button>
+                        <button class="bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>
+                    </div>
+                </div>
+                <div class="border rounded p-4">
+                    <img src="https://via.placeholder.com/150" alt="QR Code" class="w-full mb-4">
+                    <h3 class="font-semibold">UPI Payment</h3>
+                    <p class="text-sm text-gray-600">Scans: 156</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Edit</button>
+                        <button class="bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>
+                    </div>
+                </div>
+                <div class="border rounded p-4">
+                    <img src="https://via.placeholder.com/150" alt="QR Code" class="w-full mb-4">
+                    <h3 class="font-semibold">URL Link</h3>
+                    <p class="text-sm text-gray-600">Scans: 89</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Edit</button>
+                        <button class="bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-4">Scan Analytics</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Scans by Device</h3>
+                    <canvas id="device-chart" width="300" height="200"></canvas>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Scans by Location</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>India</span>
+                            <span class="font-semibold">892</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>USA</span>
+                            <span class="font-semibold">156</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>UK</span>
+                            <span class="font-semibold">98</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
